@@ -3,12 +3,14 @@
 //if currentTime=appointment time --> be white
 //if currentTime>appointment time --> be red
 
-
 $(document).ready(function(){
-  var value = $(this).siblings('description').val();
-  var time = $(this).parent().attr("id");
+  $(".saveBtn").on("click", function(){
+    var value = $(this).siblings('.description').val();
+    console.log(value);
+    var time = $(this).parent().attr("id");
 
-  localStorage.setItem(time, value);
+    localStorage.setItem(time, value);
+  })
 
   //match color to whether that time has passed or not
   function currentTime(){

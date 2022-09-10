@@ -43,6 +43,8 @@ $(document).ready(function(){
 
   hourUpdate();
 
-  
+  //display current day message
+  $("#currentDay").text(moment().format("dddd, MMMM Do"));
+
 
 });

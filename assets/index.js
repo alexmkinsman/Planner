@@ -18,7 +18,9 @@ $(document).ready(function(){
 
     //conditional to control color blocking
     $('.time-block').each(function(){
-      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+      //
+      var blockHour = parseInt($(this).attr("id").split("-")[0]);
+        console.log(blockHour);
       if (blockHour < currentHour) {
         $(this).addClass("past");
       } else if (blockHour === currentHour){
@@ -35,15 +37,15 @@ $(document).ready(function(){
   currentTime();
 
   //local storage not working.
-  $("#nine-am .description").val(localStorage.getItem("nine-am"))
-  $("#ten-am .description").val(localStorage.getItem("ten-am"))
-  $("#eleven-am .description").val(localStorage.getItem("eleven-am"))
-  $("#twelve-pm .description").val(localStorage.getItem("twelve-pm"))
-  $("#one-pm .description").val(localStorage.getItem("one-pm"))
-  $("#two-pm .description").val(localStorage.getItem("two-pm"))
-  $("#three-pm .description").val(localStorage.getItem("three-pm"))
-  $("#four-pm .description").val(localStorage.getItem("four-pm"))
-  $("#five-pm .description").val(localStorage.getItem("five-pm"))
+  $("#9-am .description").val(localStorage.getItem("9-am"))
+  $("#10-am .description").val(localStorage.getItem("10-am"))
+  $("#11-am .description").val(localStorage.getItem("11-am"))
+  $("#12-hour .description").val(localStorage.getItem("12-hour"))
+  $("#13-hour .description").val(localStorage.getItem("13-hour"))
+  $("#14-hour .description").val(localStorage.getItem("14-hour"))
+  $("#15-hour .description").val(localStorage.getItem("15-hour"))
+  $("#16-hour .description").val(localStorage.getItem("16-hour"))
+  $("#17-hour .description").val(localStorage.getItem("17-hour"))
 
 
   //display current day message

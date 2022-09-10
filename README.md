@@ -20,3 +20,5 @@ THEN the text for that event is saved in local storage
 
 WHEN I refresh the page
 THEN the saved events persist
+
+![](https://file%2B.vscode-resource.vscode-cdn.net/Users/alexandrakinsman/Desktop/Screen%20Shot%202022-09-09%20at%207.47.39%20PM.png?version%3D1662778085354)

@@ -33,7 +33,7 @@ $(document).ready(function(){
       }
     })
   }
-
+  setInterval(currentTime, 60000);
   currentTime();
 
   //local storage not working.
